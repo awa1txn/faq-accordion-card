@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    user-select: none;
+}
+body{
+    height: 100svh;
+    background: linear-gradient(0deg, hsl(240, 73%, 65%) 22%, hsl(273, 75%, 66%) 82%);
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+}
+.woman-online{
+    display: none
+}
+.bg-mobile{
+    display: none;
+}
+main{
+    background: white;
+    border-radius: 25px;
+    width: 900px;
+    height: 600px;
+    display: flex;
+    
+}
+.images{
+    width: 400px;
+    background: url('./images/bg-pattern-desktop.svg'),
+    url('./images/illustration-woman-online-desktop.svg');
+    background-size: auto, auto, auto;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left -590px top -220px, left -80px top 160px;
+}
+.images>img{
+    position: relative;
+    top: 295px;
+    left: -95px;
+}
+.content{
+    width: 400px;
+    padding: 70px 20px;
+}
+.qas{
+    width: 360px;
+    display: flex;
+
+    justify-content: space-between;
+    line-height: 80px;
+}
+@media screen and (max-width: 900px) {
+    main{
+        flex-direction: column;
+        width: 500px;
+        height: 660px;
+        margin: 200px 0;
+    }
+    .images{
+        width: 100%;
+        background: none;
+        background-position: left top 200px, left top -100px ;
+    }
+    .box{
+        display: none;
+    }
+    .woman-online{
+        display: block;
+        position: relative !important;
+        top: -160px !important;
+        left: 82px !important;
+        width: 350px;
+        z-index: 99999;
+    }
+    .bg-mobile{
+        display: block;
+        position: relative !important;
+        top: -269px !important;
+        left: 82px !important;
+        width: 342px;
+        z-index: 9999;
+    }
+    .content{
+        position: relative;
+        top: -328px;
+    }
+    .qas{
+        width: 100%;
+    }
+  }

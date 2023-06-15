@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body>
+  <main>
+    <div class="images">
+    <img class="box" src="./images/illustration-box-desktop.svg" alt="">
+    <img class="woman-online" src="./images/illustration-woman-online-mobile.svg" alt=""> 
+    <img class="bg-mobile" src="./images/bg-pattern-mobile.svg" alt="">
+    </div>
+    <div class="content">
+      <h1>FAQ</h1>
+
+      <div id="res1" class="qas" onclick="toggleAnswer(0)">
+        <div class="question">How many team members can I invite?</div>
+        <div class="arrow"><img src="./images/icon-arrow-down.svg" alt=""></div>
+      </div>
+      <div class="res">
+        You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+      </div>
+      <div id="res2" class="qas" onclick="toggleAnswer(1)">
+        <div class="question">What is the maximum file upload size?</div>
+        <div class="arrow"><img src="./images/icon-arrow-down.svg" alt=""></div>
+      </div>
+      <div class="res">
+        No more than 2GB. All files in your account must fit your allotted storage space.
+      </div>
+      <div id="res3" class="qas" onclick="toggleAnswer(2)">
+        <div class="question">How do I reset my password?</div>
+        <div class="arrow"><img src="./images/icon-arrow-down.svg" alt=""></div>
+      </div>
+      <div class="res">
+        Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+      </div>
+      <div id="res4" class="qas" onclick="toggleAnswer(3)">
+        <div class="question">Can I cancel my subscription?</div>
+        <div class="arrow"><img src="./images/icon-arrow-down.svg" alt=""></div>
+      </div>
+      <div class="res">
+        Yes! Send us a message and we’ll process your request no questions asked.
+      </div>
+      <div id="res5" class="qas" onclick="toggleAnswer(4)">
+        <div class="question">Do you provide additional support?</div>
+        <div class="arrow"><img src="./images/icon-arrow-down.svg" alt=""></div>
+      </div>
+      <div class="res">
+        Chat and email support is available 24/7. Phone lines are open during normal business hours.
+      </div>
+    </div>
+  </main>
+  <script src="./js.js"></script>
+</body>
+</html>
